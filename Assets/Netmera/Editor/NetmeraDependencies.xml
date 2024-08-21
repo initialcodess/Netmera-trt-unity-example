@@ -1,0 +1,27 @@
+<dependencies>
+    <iosPods>
+        <iosPod name="Netmera/NetmeraWithoutAdId" version="3.14.10-WithoutDependency" minTargetSdk="10.0" addToAllTargets="true"></iosPod>
+        <iosPod name="Netmera/NotificationServiceExtension" version="3.14.10-WithoutDependency" minTargetSdk="10.0" addToAllTargets="true"></iosPod>
+        <iosPod name="Netmera/NotificationContentExtension" version="3.14.10-WithoutDependency" minTargetSdk="10.0" addToAllTargets="true"></iosPod>
+    </iosPods>
+    <androidPackages>
+        <!--
+         TODO by app developer:
+         //must be add the bottom of app's build gradle
+            apply plugin: 'com.google.gms.google-services'
+            apply plugin: 'com.huawei.agconnect'
+         -->
+        
+        <androidPackage spec="com.netmera:nmcore:3.13.0-noads"/>
+        <androidPackage spec="com.netmera:nmfcm:3.13.0-noads"/>
+        <androidPackage spec="com.netmera:nmhms:3.13.0-noads"/>
+        <androidPackage spec="androidx.core:core:1.1.0"/>
+        <androidPackage spec="com.huawei.agconnect:agconnect-core:1.5.2.300"/>
+        
+        <repositories>
+            <repository>https://release.netmera.com/release/android</repository>
+            <repository>https://maven.google.com</repository>
+            <repository>https://developer.huawei.com/repo</repository>
+        </repositories>
+    </androidPackages>
+</dependencies>
